@@ -67,5 +67,6 @@ a{
     background-image: url(../img/rs-cover.jpg);
 }
 .banner>.mask{
+    height: 515px;
     background: rgba(0 0 0 0.8);
 }
