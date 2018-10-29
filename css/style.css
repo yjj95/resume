@@ -3,9 +3,11 @@
     display: block;
     clear: both;
 }
-body{
+*{
     margin: 0;
     padding: 0;
+}
+body{
     background-color: #efefef;
 }
 ul{
@@ -88,16 +90,16 @@ a{
 .usercard .text{
     float: left;
     margin-left: 65px;
-    width: 470px;/**/
+    width: 470px;/*因为float元素会收缩*/
 }
 .usercard .welcome{
     font-size: ;
-    padding: ;
     background-color: #e6686a;
     color: #fff;
     display: inline-block;
     line-height: 22px;
     padding: 4px 16px;
+    margin-bottom: 10px;
     position: relative;
 }
 .welcome .triangle{
@@ -107,4 +109,28 @@ a{
     position: absolute;
     top: 100%;
     left: 10px;
+}
+.text h1{
+    margin-top: 18px;
+}
+.text hr{
+    height: 0;
+    /*border: 1px solid #efefef;*/
+    border: none;
+    border-top: 1px solid #dedede;
+    margin: 20px 0;
+}
+.text dl dt,
+.text dl dd{
+    float: left;
+}
+.text dl dt{
+    width: 30%;
+    font-weight: bold;
+}
+.text dl dd{
+    width: 70%;
+}
+.media{
+    background-color:#e66b6a;
 }
