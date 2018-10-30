@@ -123,6 +123,7 @@ a{
 .text dl dt,
 .text dl dd{
     float: left;
+    padding: 5px 0;
 }
 .text dl dt{
     width: 30%;
@@ -130,7 +131,42 @@ a{
 }
 .text dl dd{
     width: 70%;
+    color: #9da0a7;
 }
 .media{
     background-color:#e66b6a;
+    text-align: center;
+}
+@font-face {
+    font-family: 'iconfont';
+    src: url('iconfont.eot');
+    src: url('iconfont.eot?#iefix') format('embedded-opentype'),
+    url('iconfont.woff') format('woff'),
+    url('iconfont.ttf') format('truetype'),
+    url('iconfont.svg#iconfont') format('svg');
+}
+.iconfont{
+    font-family:"iconfont" !important;
+    font-size:16px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+.media a{
+    display: inline-block;
+    vertical-align: top;
+    margin: 16px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    line-height: 40px;
+}
+.media a:hover{
+    background-color: #CF5D5F
+}
+.media svg{
+    fill: white;
+    width: 30px;
+    height: 30px;
+    margin-top: 4px;
 }

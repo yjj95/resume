@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>太极</title>
     <style>
         body{
             margin: 0;
@@ -27,16 +27,36 @@
             animation-iteration-count: infinite;
             animation-timing-function: linear;
         }
+        .circle::before{
+            content: "";
+            display: inline-block;
+            width:20px;
+            height:20px;
+            border-radius: 50%;
+            background-color:#000;
+            border:40px solid #fff;
+            position: absolute;
+            top: 42px;
+            right: 0;
+        }
+        .circle::after{
+            content: "";
+            display: inline-block;
+            width:20px;
+            height:20px;
+            border-radius: 50%;
+            background-color:#fff;
+            border:40px solid #000;
+            position: absolute;
+            top: 52px;
+            left: 0;
+        }
     </style>
 </head>
 <body>
         <div class="circle" style="width:200px;height:200px;border-radius: 50%;background-color:black;position: relative;">
-            <div class="curcle" style="width:20px;height:20px;border-radius: 50%;background-color:#000;border:40px solid #fff;position: absolute;top: 50px;right: 0;">
-                    
-            </div>
-            <div class="curcle" style="width:20px;height:20px;border-radius: 50%;background-color:#fff;border:40px solid #000;position: absolute;top:50px;left: 0;">
-                    
-            </div>
+            
+             
         </div>
 </body>
 </html>
