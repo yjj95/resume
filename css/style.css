@@ -203,13 +203,13 @@ body main .selfIntroduction{
     text-align: center;
     font-family: kai;
 }
-section.skill{
+section.skill,.profolio{
     max-width: 940px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 60px;
 }
-.skill h2{
+.skill h2,.profolio h2{
     text-align: center;
     font-weight: 600;
     line-height: 1.2;
@@ -250,4 +250,32 @@ section.skill{
 }
 .skill ol li:nth-child(odd){
     padding-right: 40px;
+}
+.profolio nav{
+    text-align: center;
+}
+.profolio ol{
+    display:inline-block;/*这样文本居中才会起作用*/
+    vertical-align: top;
+}
+.profolio ol li{
+    float: left;
+    margin-left: 40px;
+}
+.profolio ol li:first-child{
+    margin-left: 0;
+}
+.profolio .bar{
+    border-radius: 2px;
+    height: 5px;
+    background: white;
+    margin-top:5px ;
+    margin-bottom: 100px;
+}
+.profolio .bar-inner{
+    border-radius: 2px;
+    height: 100%;
+    background: #CF5D5F;
+    width: 100%;
+    margin-left:0px ;
 }
