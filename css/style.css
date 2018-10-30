@@ -165,8 +165,8 @@ a{
     background-color: #CF5D5F
 }
 .media svg{
-    fill: white;
     width: 30px;
     height: 30px;
+    fill: white;
     margin-top: 4px;
 }
