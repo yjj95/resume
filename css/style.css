@@ -296,3 +296,12 @@ section.skill,.profolio{
     margin-left: 144px;
     width: 32px;
 }
+.jobs{
+    position: relative;
+    height: 630px;
+}
+.jobs .big,.jobs .small{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
