@@ -251,8 +251,14 @@ section.skill,.profolio{
 .skill ol li:nth-child(odd){
     padding-right: 40px;
 }
+.profolio{
+    text-align: center;
+}
 .profolio nav{
     text-align: center;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 32px;
 }
 .profolio ol{
     display:inline-block;/*这样文本居中才会起作用*/
@@ -261,6 +267,7 @@ section.skill,.profolio{
 .profolio ol li{
     float: left;
     margin-left: 40px;
+    cursor: pointer;
 }
 .profolio ol li:first-child{
     margin-left: 0;
@@ -270,12 +277,22 @@ section.skill,.profolio{
     height: 5px;
     background: white;
     margin-top:5px ;
-    margin-bottom: 100px;
+    margin-bottom: 28px;
 }
 .profolio .bar-inner{
     border-radius: 2px;
     height: 100%;
     background: #CF5D5F;
-    width: 100%;
-    margin-left:0px ;
+}
+.profolio .bar-inner.state-1{
+    margin-left: 0;
+    width: 32px;
+}
+.profolio .bar-inner.state-2{
+    margin-left: 72px;
+    width: 32px;
+}
+.profolio .bar-inner.state-3{
+    margin-left: 144px;
+    width: 32px;
 }

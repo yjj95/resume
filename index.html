@@ -9,8 +9,6 @@
     <!--rel:relationship-->
 </head>
 <body>
-    <div class="contain">
-        <header>
             <div class="topNavBar">
                 <div class="topNavBar-inner clearfix">
                     <a class="logo" href="#">
@@ -134,14 +132,13 @@
                 <h2>作品集</h2>
                 <nav>
                     <ol>
-                        <li>所有
-                            <div class="bar">
-                                <div class="bar-inner"></div>
-                            </div>
-                        </li>
-                        <li>框架</li>
-                        <li>原生</li>
+                        <li id="profolio1">所有</li>
+                        <li id="profolio2">框架</li>
+                        <li id="profolio3">原生</li>
                     </ol>
+                    <div class="bar">
+                        <div id="profolioBar" class="bar-inner state-1"></div>
+                    </div>
                 </nav>
                 <div class="jobs">
                     <div class="big"></div>
@@ -149,8 +146,17 @@
                     <div class="small"></div>
                 </div>
             </section>
-        </header>
-    </div>
+            <script>
+                profolio1.onclick=function(){
+                    profolioBar.className="bar-inner state-1"
+                }
+                profolio2.onclick=function(){
+                    profolioBar.className="bar-inner state-2"
+                }
+                profolio3.onclick=function(){
+                    profolioBar.className="bar-inner state-3"
+                }
+            </script>
     <script src="//at.alicdn.com/t/font_896631_5qsyaz1chyx.js"></script>
 </body>
 </html>
