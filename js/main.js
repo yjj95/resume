@@ -1,5 +1,5 @@
 setTimeout(function(){
-    findClosest()
+    findClosest()//
 },0)
 //1.导航悬停
 var topNavBar=document.getElementById("topNavBar")
