@@ -5,156 +5,168 @@
     <title>resume</title>
     <link rel="stylesheet" href="./css/style.css">
     <!--rel:relationship-->
+    <link rel="stylesheet" href="./css/loading.css">
 </head>
 <body>
-            <div class="topNavBar">
-                <div class="topNavBar-inner clearfix">
-                    <a class="logo" href="#">
-                        <span class="rs">RS</span>
-                        <span class="card">card</span>
-                    </a>
-                    <nav>
-                        <ul class="clearfix">
-                            <li><a href="#">关于</a></li>
-                            <li><a href="#">技能</a></li>
-                            <li><a href="#">作品</a></li>
-                            <li><a href="#">博客</a></li>
-                            <li><a href="#">日历</a></li>
-                            <li><a href="#">联系方式</a></li>
-                            <li><a href="#">其他</a></li>
+    <div id="loadingWrapper" class="loadingWrapper active">
+        <div class="loading">
+        </div>  
+    </div>
+    <div id="topNavBar" class="topNavBar">
+        <div class="topNavBar-inner clearfix">
+            <a class="logo" href="#">
+                <span class="rs">RS</span>
+                <span class="card">card</span>
+            </a>
+            <nav class="menu">
+                <ul class="clearfix">
+                    <li><a href="#about">关于</a></li>
+                    <li><a href="#skill">技能</a></li>
+                    <li>
+                        <a href="#profolio" class="menuTigger">作品</a>
+                        <ul class="submenu">
+                            <li>作品1</li>
+                            <li>作品2</li>
+                            <li>作品3</li>
                         </ul>
-                    </nav>
+                    </li>
+                    <li>
+                        <a href="#" class="menuTigger">博客</a>
+                        <ul class="submenu">
+                            <li>博客1</li>
+                            <li>博客2</li>
+                            <li>博客3</li>
+                        </ul>
+                    </li>
+                    <li><a href="#">日历</a></li>
+                    <li><a href="#">联系方式</a></li>
+                    <li><a href="#">其他</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="banner">
+        <div class="mask"></div>
+    </div>
+    <main>
+        <div data-x id="about" class="usercard">
+            <div class="picAndText clearfix">
+                <div class="pic">
+                    <img src="./img/avatar2.jpg" width="299" height="347" alt="头像">
+                </div>
+                <div class="text">
+                    <div class="profile">
+                        <span class="welcome">Hello
+                            <span class="triangle"></span>
+                        </span>
+                        <h1>闫佳</h1>
+                        <p>前端开发工程师</p>
+                        <hr>
+                        <dl class="clearfix">
+                            <dt>年龄</dt>
+                            <dd>22</dd>
+                            <dt>所在城市</dt>
+                            <dd>北京</dd>
+                            <dt>手机</dt>
+                            <dd>159</dd>
+                            <dt>邮箱</dt>
+                            <dd>159</dd>
+                            <dt></dt>
+                            <dd></dd>
+                        </dl>
+                    </div>
                 </div>
             </div>
-            <div class="banner">
-                <div class="mask"></div>
+            <footer class="media"><!--竟然放在了text里-->
+                <a href="#">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-githublogo"></use>
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-twitter"></use>
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-xinlang"></use>
+                    </svg>
+                </a>
+            </footer>
+        </div>
+        <p class="button-wrapper">
+            <a class="button" href="./rs.pdf" target="_blank" download>Download</a>
+        </p>
+        <p class="selfIntroduction">前端工程师自我介绍前端工程师自我介绍前端工程师自我介绍前端工程师自我介绍前端工程师自我介绍前端工程师自我介绍<br/>......</p>
+    </main>
+    <section data-x id="skill" class="skill">
+        <h2>技能</h2>
+        <ol class="clearfix">
+            <li>
+                <h3>HTML 5 &amp; CSS 3</h3>
+                <div class="progressBar">
+                    <div class="progress" style="width:88%;"></div>
+                </div>
+            </li>
+            <li>
+                <h3>JavaScript</h3>
+                <div class="progressBar">
+                    <div class="progress" style="width:77%;"></div>
+                </div>
+            </li>
+            <li>
+                <h3>jQuery</h3>
+                <div class="progressBar">
+                     <div class="progress"style="width:68%;"></div>
+                </div>
+            </li>
+            <li>
+                <h3>Vue</h3>
+                <div class="progressBar">
+                    <div class="progress"style="width:8%;"></div>
+                </div>
+            </li>
+            <li>
+                <h3>React</h3>
+                <div class="progressBar">
+                    <div class="progress"style="width:5%;"></div>
+                </div>
+            </li>
+            <li>
+                <h3>HTTP</h3>
+                <div class="progressBar">
+                    <div class="progress"style="width:90%;"></div>
+                </div>
+            </li>
+        </ol>
+    </section>
+    <section data-x id="profolio" class="profolio">
+        <h2>作品集</h2>
+        <nav>
+            <ol>
+                <li id="profolio1">所有</li>
+                <li id="profolio2">框架</li>
+                <li id="profolio3">原生</li>
+            </ol>
+            <div class="bar">
+                <div id="profolioBar" class="bar-inner state-1"></div>
             </div>
-            <main>
-                <!--我知道横向布局的两个块要包起来，但它是写完之后包，
-                我以为这个块就是包含块呢-->
-                <div class="usercard">
-                    <div class="picAndText clearfix">
-                        <div class="pic">
-                            <img src="./img/avatar.jpg" width="299" height="347" alt="头像">
-                        </div>
-                        <div class="text">
-                            <div class="profile">
-                                <span class="welcome">Hello
-                                    <span class="triangle"></span>
-                                </span>
-                                <h1>闫佳</h1>
-                                <p>前端开发工程师</p>
-                                <hr>
-                                <dl class="clearfix">
-                                    <dt>年龄</dt>
-                                    <dd>22</dd>
-                                    <dt>所在城市</dt>
-                                    <dd>北京</dd>
-                                    <dt>手机</dt>
-                                    <dd>159</dd>
-                                    <dt>邮箱</dt>
-                                    <dd>159</dd>
-                                    <dt></dt>
-                                    <dd></dd>
-                                    <dt>vacation</dt>
-                                    <dd>...</dd>
-                                </dl>
-                            </div>
-                        </div>
-                    </div>
-                    <footer class="media"><!--竟然放在了text里-->
-                        <a href="#">
-                            <svg class="icon" aria-hidden="true">
-                                <use xlink:href="#icon-githublogo"></use>
-                            </svg>
-                        </a>
-                        <a href="#">
-                            <svg class="icon" aria-hidden="true">
-                                <use xlink:href="#icon-twitter"></use>
-                            </svg>
-                        </a>
-                        <a href="#">
-                            <svg class="icon" aria-hidden="true">
-                                <use xlink:href="#icon-xinlang"></use>
-                            </svg>
-                        </a>
-                    </footer>
-                </div>
-                <p class="button-wrapper">
-                    <a class="button" href="./rs.pdf" target="_blank" download>Download</a>
-                </p>
-                <p class="selfIntroduction">前端工程师自我介绍前端工程师自我介绍前端工程师自我介绍前端工程师自我介绍前端工程师自我介绍前端工程师自我介绍<br/>......</p>
-            </main>
-            <section class="skill">
-                <h2>技能</h2>
-                <ol class="clearfix">
-                    <li>
-                        <h3>HTML 5 &amp; CSS 3</h3>
-                        <div class="progressBar">
-                            <div class="progress"></div>
-                        </div>
-                    </li>
-                    <li>
-                        <h3>JavaScript</h3>
-                        <div class="progressBar">
-                            <div class="progress"></div>
-                        </div>
-                    </li>
-                    <li>
-                        <h3>jQuery</h3>
-                        <div class="progressBar">
-                            <div class="progress"></div>
-                        </div>
-                    </li>
-                    <li>
-                        <h3>Vue</h3>
-                        <div class="progressBar">
-                            <div class="progress"></div>
-                        </div>
-                    </li>
-                    <li>
-                        <h3>React</h3>
-                        <div class="progressBar">
-                            <div class="progress"></div>
-                        </div>
-                    </li>
-                    <li>
-                        <h3>HTTP</h3>
-                        <div class="progressBar">
-                            <div class="progress"></div>
-                        </div>
-                    </li>
-                </ol>
-            </section>
-            <section class="profolio">
-                <h2>作品集</h2>
-                <nav>
-                    <ol>
-                        <li id="profolio1">所有</li>
-                        <li id="profolio2">框架</li>
-                        <li id="profolio3">原生</li>
-                    </ol>
-                    <div class="bar">
-                        <div id="profolioBar" class="bar-inner state-1"></div>
-                    </div>
-                </nav>
-                <div class="jobs">
-                    <div class="big"><img src="" alt=""></div>
-                    <div class="small"><img src="" alt=""></div>
-                    <div class="small"><img src="" alt=""></div>
-                </div>
-            </section>
-            <script>
-                profolio1.onclick=function(){
-                    profolioBar.className="bar-inner state-1"
-                }
-                profolio2.onclick=function(){
-                    profolioBar.className="bar-inner state-2"
-                }
-                profolio3.onclick=function(){
-                    profolioBar.className="bar-inner state-3"
-                }
-            </script>
-    <script src="//at.alicdn.com/t/font_896631_5qsyaz1chyx.js"></script>
+        </nav>
+        <div class="jobs">
+            <div class="big" style="top:0;left:0;"><img src="./img/big.jpg" alt=""></div>
+            <div class="small" style="top:0;left:645px;"><img src="./img/small1.jpg" alt=""></div>
+            <div class="small" style="top:312px;left:645px;"><img src="./img/small2.jpg" alt=""></div>
+        </div>
+    </section>
+<script>
+    //loading动画
+    //setTimeout(function(){
+        var loadingWrapper=document.getElementById("loadingWrapper")
+        loadingWrapper.classList.remove("active");
+    //},1500)
+</script>
+<script src="./js/main.js"></script>
+<script src="//at.alicdn.com/t/font_896631_5qsyaz1chyx.js"></script>
 </body>
 </html>
