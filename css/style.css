@@ -241,13 +241,13 @@ body>main .selfIntroduction{
     text-align: center;
     font-family: kai;
 }
-section.skill,.profolio{
+section.skill,section.profolio,section.message{
     max-width: 940px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 60px;
 }
-.skill h2,.profolio h2{
+.skill h2,.profolio h2,section.message h2{
     text-align: center;
     font-weight: 600;
     line-height: 1.2;

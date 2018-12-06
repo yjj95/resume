@@ -83,7 +83,7 @@ for(let i =0;i<specialTags.length; i++){
 //5.高亮当前
 function findClosest(){
     let specialTags = document.querySelectorAll('[data-x]')
-    console.log(specialTags)//找最近的--滚动到目标需要的距离最少
+    //找最近的--滚动到目标需要的距离最少
     let minIndex = 0
     for(let i =1;i<specialTags.length; i++){
       if(Math.abs(specialTags[i].offsetTop - window.scrollY) < Math.abs(specialTags[minIndex].offsetTop - window.scrollY)){

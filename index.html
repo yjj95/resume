@@ -173,6 +173,13 @@
         <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
     </section>
+    <section class="message">
+        <h2>留言</h2>
+        <form action="" id="postMessageForm">
+            <input type="text" name="content">
+            <input type="submit">
+        </form>
+    </section>
 <script>
     //loading动画
     //setTimeout(function(){
@@ -197,5 +204,7 @@
       },
     })        
     </script>
+    <script src="//cdn.jsdelivr.net/npm/leancloud-storage@3.11.0/dist/av-min.js"></script>
+    <script src="./js/message.js"></script>
 </body>
 </html>
