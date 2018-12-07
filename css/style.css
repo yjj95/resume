@@ -316,7 +316,19 @@ section.skill,section.profolio,section.message{
     border-radius: 50%;
     outline: none;
 }
-
+section.message ol{
+    max-width: 600px;
+    margin: 0 auto;
+    border-top: 1px solid #ddd;
+}
+section.message ol li{
+    padding: 16px;
+    border-bottom: 1px solid #ddd;
+}
+section.message form{
+    max-width: 600px;
+    margin: 50px auto;
+}
 .profolio{
     text-align: center;
 }
