@@ -42,17 +42,17 @@ a{
 .topNavBar .logo{
     float: left;
 }
-.topNavBar nav{
+.topNavBar nav.menu{
     float: right;
     padding: 4px 0;
 }
-.topNavBar nav>ul>li{
+.topNavBar nav.menu>ul>li{
     float: left;
     margin-left: 17px;
     margin-right: 17px;
     position: relative;
 }
-.topNavBar nav>ul>li>a{
+.topNavBar nav.menu>ul>li>a{
     font-size: 12px;
     color: inherit;
     font-weight: bold;
@@ -87,23 +87,23 @@ a{
     font-family:Arial Black;
     padding: 3px 0 4px 0;
 }
-.rs{
+.topNavBar .logo .rs{
     font-size: 24px;
     margin-right: 4px;
     color: #e66b6a;
 }
-.card{
+.topNavBar .logo .card{
     font-size: 24px;
     color: #9a9da2;
 }
-.topNavBar .submenu{
+.topNavBar nav.menu ul.submenu{
     display: none;
     position: absolute;
     top: 100%;
     left: 0;
     white-space: nowrap;
 }
-.topNavBar .submenu.active{
+.topNavBar nav.menu ul.submenu.active{
     display: block;
 }
 .banner{
@@ -116,7 +116,7 @@ a{
     height: 515px;
     background-color: rgba(0,0,0,0.8);
 }
-.usercard{
+main .usercard{
     background: #fff;
     margin-left: auto;
     margin-right: auto;
@@ -215,7 +215,7 @@ a{
     fill: white;
     margin-top: 4px;
 }
-body main .button-wrapper a.button{
+body>main .button-wrapper a.button{
     font-size: 14px;
     color: #3d4451;
     background: #efefef;
@@ -247,14 +247,14 @@ section.skill,section.profolio,section.message{
     margin-right: auto;
     margin-top: 60px;
 }
-.skill h2,.profolio h2,section.message h2{
+.skill h2,.profolio h2,.message h2{
     text-align: center;
     font-weight: 600;
     line-height: 1.2;
     color: #3d4451;
     font-size: 34px;
 }
-.skill ol{
+section.skill ol{
     max-width: 940px;
     background: white;
     box-shadow: rgba(0, 0, 0, 0.5);
@@ -305,17 +305,6 @@ section.skill,section.profolio,section.message{
 .skill ol li:nth-child(odd){
     padding-right: 40px;
 }
-.swiper-container {
-    width: 668px;
-    height: 501px;
-}  
-.swiper-button-next, .swiper-button-prev{
-    background-color: white;
-    width: 64px;
-    height: 64px;
-    border-radius: 50%;
-    outline: none;
-}
 section.message ol{
     max-width: 600px;
     margin: 0 auto;
@@ -329,7 +318,7 @@ section.message form{
     max-width: 600px;
     margin: 50px auto;
 }
-.profolio{
+section.profolio{
     text-align: center;
 }
 .profolio nav{
@@ -375,12 +364,16 @@ section.message form{
     margin-left: 144px;
     width: 32px;
 }
-.jobs{
-    position: relative;
-    height: 630px;
-}
-.jobs .big,.jobs .small{
-    position: absolute;
+.swiper-container {
+    width: 668px;
+    height: 501px;
+}  
+.swiper-button-next, .swiper-button-prev{
+    background-color: white;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    outline: none;
 }
 [data-x].offset{
     transform: translateY(60px)
